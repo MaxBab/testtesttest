@@ -1,0 +1,202 @@
+commits:
+  - sha: 8b08fdb2a41a6fb3df6099eefea53705c9583a43
+    title: Fix tests resources cleanup for Openshift (#55638) (#344)
+    author: Filip Brychta
+    date: 2025-04-09 14:36:47 +0200
+    upstreamPR: https://github.com/istio/istio/pull/55638
+    comment: Probably false positive. The changes are available upstream.
+  - sha: 30015619f01d1d3508f60cbf91fa8773969526bb
+    title: Add flag to be compliant with attribute handling behavior in the specification (#341)
+    author: Yann Liu
+    date: 2025-04-08 12:11:18 +0800
+    upstreamPR: https://github.com/istio/istio/pull/55746
+    comment: We need this to support the Gateway API. The upstream PR is still pending.
+  - sha: 25dfdc58014fbc05901aff6f75c978b7f8a73f1c
+    title: Enable CA Bundle injection in only Gateway Namespaces (#335)
+    author: Aslak Knutsen
+    date: 2025-04-04 13:45:17 +0200
+    comment: No direct upstream PR. This feature is a temp fix for the Ingress Team to avoid installing certs into every namespace in the cluster even if there are no Gateways or istio related resources there. This PR can be removed when the upstream Kubernetes API ClusterTrustBundle is out of alpha/beta and we/customers have migrated to use it. Time frame semi unknown(6 months+). (https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#cluster-trust-bundles)
+  - sha: 48f4c4dc059c18c5090965744edf9d46fda0caa7
+    title: OSSM-8825 add integration test for gateway instance (#338)
+    author: Daniel Grimm
+    date: 2025-04-03 14:04:41 +0200
+    isPermanent: true
+    comment: this is an integration test that aims to cover most aspects of our integration with OCP for delivering Gateway API functionality. It does not have an upstream PR and will likely have to be cherry-picked for a while
+  - sha: c7a70df550c5537362f4865ef859003a914f2150
+    title: 'istiod ca: custom ConfigMap name for CA root cert (#333)'
+    author: Daniel Grimm
+    date: 2025-04-03 12:31:02 +0200
+    upstreamPR: https://github.com/istio/istio/pull/54971
+    comment: we need this to support overlapping namespaces (OSSM-8206). upstream PR is still pending
+  - sha: b273863293adbcaec326943c3eae745031ce72f5
+    title: '[release-1.24] Update proxy (#332)'
+    author: Filip Brychta
+    date: 2025-03-31 12:19:59 +0200
+    isPermanent: true
+    comment: Using proxy version from our fork.
+  - sha: 187165e80545d6a507959a45500b20ed00c32396
+    title: '[release-1.24] - Fix TestCNIRaceRepair test for Openshift (#55658)'
+    author: Maxim Babushkin
+    date: 2025-03-26 05:46:49 +0200
+    upstreamPR: https://github.com/istio/istio/pull/55658
+    comment: Probably false positive. The changes available upstream.
+  - sha: f764d9dec48e35a1e83bb6001f2fecb00b97e0c5
+    title: Release 1.24 fix test services reachability and flackiness (#55642)
+    author: Maxim Babushkin
+    date: 2025-03-24 23:18:48 +0200
+    upstreamPR: https://github.com/istio/istio/pull/55642
+    comment: Probably false positive. The changes available upstream.
+  - sha: 1d85810990b51800489f48d5787a10d9edf49695
+    title: Update sleep to use quay.io/sail-dev (#323)
+    author: OpenShift Cherrypick Robot
+    date: 2025-03-21 17:23:36 +0100
+    isPermanent: true
+    comment: This commit allows RH product docs to link to a quay.io image instead of docker.io when deploying samples.
+  - sha: 8b9d7722e7fa1fe2c201393c6f97b9d05a7543c3
+    title: Update some examples to use quay.io/sail-dev instead of docker
+    author: Nick Fox
+    date: 2025-03-10 15:32:01 -0400
+    isPermanent: true
+    comment: This commit allows RH product docs to link to a quay.io image instead of docker.io when deploying samples.
+  - sha: 5ed26ac96064259f2bf44cb77ec56a5f104c2702
+    title: Fix CVE-2025-22868 (#307)
+    author: Daniel Grimm
+    date: 2025-03-04 12:48:26 +0100
+    upstreamPR: https://github.com/istio/istio/pull/55594
+    comment: upstream commit is already included in this branch
+  - sha: 68a4ddf0e03a4993ad05aa56aba15368b69648e8
+    title: Remove ARM support on proxy update script (#301)
+    author: Jonh Wendell
+    date: 2025-02-24 11:29:15 -0500
+    comment: We don't build proxy in ARM, thus this script currently always fail.
+    isPermanent: true
+  - sha: f1d1604f82a53d9d9d6f2ecc544f9ac877049d23
+    title: Fix file permissions (#297)
+    author: Filip Brychta
+    date: 2025-02-20 12:53:11 +0100
+    isPermanent: true
+    comment: Editing a script for OCP which is not used upstream.
+  - sha: f96e71bd24172cb6c2293c960ad32572625148e6
+    title: '[release-1.24] Adding OCP scripts for int tests from master branch (#295)'
+    author: Filip Brychta
+    date: 2025-02-20 09:52:30 +0100
+    isPermanent: true
+    comment: Adding a script for OCP which is not used upstream.
+  - sha: 5a1358dc85a693976a707fd14821c90bcb720f92
+    title: 'gateway-api: allow disabling manual deployments (#281)'
+    author: Daniel Grimm
+    date: 2025-02-12 16:51:29 +0100
+    upstreamPR: https://github.com/istio/istio/pull/55053
+    comment: merged upstream and will be included in 1.26
+  - sha: 77fed3235006ea56f860aa2864208092eb284908
+    title: 'OSSM-8342: Use our proxy (#225)'
+    author: Jonh Wendell
+    date: 2025-01-15 12:56:16 -0500
+    comment: We need to use our proxy image for the tests.
+    isPermanent: true
+  - sha: 2832ac7842f624385d6fd91487feb588f6d7cb77
+    title: '[release-1.24] Fixes to make tests work in our prow (#222)'
+    author: Jonh Wendell
+    date: 2025-01-08 17:22:51 -0500
+    comment: This commit is needed to make the tests work in our prow. It will be removed when we have a better solution.
+    isPermanent: true
+  - sha: 6e5023d38f10804bc5bbb96d1479082a8beac93c
+    title: '[release-1.24] Set unsupported istioctl commands (#210) (#228)'
+    author: Brian Mangoenpawiro
+    date: 2024-12-11 19:15:48 +0100
+    isPermanent: true
+    comment: this allows us to build our own istioctl binaries disabling the commands we do not support. It does not have an upstream PR and we are not sure upstream would accept this
+  - sha: b44a8d8b4c95598815237a0a857a26bfd4a6bc85
+    title: '[release-1.24] OSSM-8998 Disable istioctl commands with building ldflags (#355)'
+    author: Brian Mangoenpawiro
+    date: 2025-05-05 10:23:50 +0200
+    isPermanent: true
+    comment: this allows us to build our own istioctl binaries disabling the commands we do not support without any hardcoded function. It does not have an upstream PR and we are not sure upstream would accept this
+    found: true
+  - sha: e6cdecebe16d23975b3b6acee123af0e7f9396b9
+    title: Remove retry timeouts delay for AWS LB (#376)
+    author: Brian Mangoenpawiro
+    date: 2025-05-07 17:09:12 +0200
+    comment: this removes the temporary fix of AWS LB delay duration. It allows to remove a divergence with upstream code base
+    found: true
+  - sha: 0cb3293059c795e8f3aca38cfcd25a3db4101bf1
+    title: Fix listener addr duplication for dualStack svc with IPv6 as primary (#56151) (#56188) (#385)
+    author: Filip Brychta
+    date: 2025-05-13 17:28:51 +0200
+    comment: False positive, the change is already in release-1.24 upstream https://github.com/istio/istio/pull/56188
+    upstreamPR: https://github.com/istio/istio/pull/56188
+    found: true
+  - sha: 1de930513cb45ac30272ddce15d640ea7e4bf3d6
+    title: bump golang.org/x/net (#56238) (#384)
+    author: Filip Brychta
+    date: 2025-05-13 15:35:06 +0200
+    comment: False positive, the change is already in release-1.24 upstream https://github.com/istio/istio/pull/56238
+    upstreamPR: https://github.com/istio/istio/pull/56238
+    found: true
+  - sha: 73b8a0fbf58d8dc6b66a76b07059eb97c8612a01
+    title: '[release-1.24] Automator: Update proxy (#394)'
+    author: openshift-service-mesh-bot
+    date: 2025-06-13 07:33:05 +0200
+    comment: Our version of the proxy
+    isPermanent: true
+    found: true
+  - sha: 5c914a2c40d7573c11fb94a755a859e3202e0c3d
+    title: '[release-1.24] Automator: Update proxy (#485)'
+    author: openshift-service-mesh-bot
+    date: 2025-09-10 09:21:23 +0200
+    found: true
+  - sha: 212682ee80849606726afb8d1fc349b468bcd64f
+    title: '[release-1.24] Automator: Update proxy (#513)'
+    author: openshift-service-mesh-bot
+    date: 2025-10-15 15:01:13 -0400
+    found: true
+  - sha: 6afb4060d890b47f7b1e861a6ebdd1c7ef94961c
+    title: '[release-1.24] Automator: Update proxy (#518)'
+    author: openshift-service-mesh-bot
+    date: 2025-10-22 04:16:45 -0400
+    found: true
+  - sha: aca33d64402be6c6540149df6ccca44999e1f1ea
+    title: '[release-1.24] Automator: Update proxy (#527)'
+    author: openshift-service-mesh-bot
+    date: 2025-10-26 07:02:58 -0400
+    found: true
+  - sha: 10e4d700bd3b39f9d4ecc9623c86958824dda729
+    title: '[release-1.24] Automator: Update proxy (#529)'
+    author: openshift-service-mesh-bot
+    date: 2025-11-02 08:46:05 -0500
+    found: true
+  - sha: 9bff741fb4818fc690834b42cb96efcd5863e881
+    title: Prevent silent exit in OpenShift CI (#550)
+    author: OpenShift Cherrypick Robot
+    date: 2026-01-13 14:07:18 +0100
+    found: true
+  - sha: 954474f79808cfa49e223ee1a2a5a2cbd3be44d5
+    title: '[release-1.24] Control Gateway API deploy in integration tests (#567)'
+    author: Maxim Babushkin
+    date: 2026-02-02 22:02:17 +0200
+    found: true
+  - sha: 53a7da20088be185984b92f84bdda5a495c5927e
+    title: '[release-1.24] Automator: Update proxy (#541)'
+    author: openshift-service-mesh-bot
+    date: 2026-02-03 03:18:35 -0500
+    found: true
+  - sha: 07a0078396ce598eda869251f2e1dfc101b2bce1
+    title: '[release-1.24] Backport changes for use fully qualified names (#578)'
+    author: Matej Kralik
+    date: 2026-02-12 09:23:25 +0100
+    found: true
+  - sha: 6ca1d2c1f5512ac0c1fac0e137c28e27e3799ac9
+    title: Add PR label check Github Action (#625)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-03 15:06:13 +0100
+    found: true
+  - sha: 3df41f55733e7b1b8045cbbb7450b56a5f76ffb6
+    title: '[release-1.24] Automator: Update proxy (#600)'
+    author: openshift-service-mesh-bot
+    date: 2026-03-04 03:16:00 -0500
+    found: true
+  - sha: 36c948e4bb439743da865fed6641e54ac9bb6b39
+    title: Update "PR label check" GH workflow (#633)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-04 06:19:18 +0100
+    found: true

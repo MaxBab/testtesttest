@@ -1,0 +1,385 @@
+commits:
+  - sha: 94319d0fff381c4db4e6afde976c0ee116b58edb
+    title: Fixing lint warnings in our ocp scripts
+    author: Filip Brychta
+    date: 2025-09-05 09:08:24 +0200
+    found: true
+  - sha: 7dc0b7fbeb56325f4af644f4c2c0e6301a30472d
+    title: '[release-1.27] Fix ca root cert configmap update in gateway ca controller'
+    author: Filip Brychta
+    date: 2025-09-04 08:12:10 +0200
+    found: true
+  - sha: 7fed0aa8b0db56e7d898652cfe6f4005f90a7f5d
+    title: '[release-1.27] Enable CA Bundle injection in only Gateway Namespaces (#335)'
+    author: Aslak Knutsen
+    date: 2025-04-04 13:45:17 +0200
+    found: true
+    isPermanent: true
+    comment: 'Temporary permanent'
+  - sha: 024dc8e799e74f71ab71c4b7b369e77132821255
+    title: '[release-1.26] OSSM-8825 add integration test for gateway instance (#338)'
+    author: Daniel Grimm
+    date: 2025-04-03 14:04:41 +0200
+    found: true
+  - sha: 3551c2daf4e1fe68d6b56ed304e3488e0a6ddf20
+    title: Do not create the PDB by default when we don't have enough replicas (#57202)
+    author: Filip Brychta
+    date: 2025-08-20 09:49:21 +0200
+    found: true
+  - sha: c61bead274d39a82abd664fa7d3859d8de64ac16
+    title: 'manifests: fix NetworkPolicy creation (#449)'
+    author: Daniel Grimm
+    date: 2025-07-24 16:43:23 +0200
+    found: true
+  - sha: 25d977140395652e28b0416cc135059101c6fd43
+    title: 'manifests: add NetworkPolicy to istio-cni chart (#446)'
+    author: Daniel Grimm
+    date: 2025-07-22 16:01:58 +0200
+    found: true
+  - sha: 8adc17bbc1b272ed790129fbfd9d22c843b12dc4
+    title: '[release-1.27] manifests: add default NetworkPolicy for istiod  (#443)'
+    author: Daniel Grimm
+    date: 2025-07-15 23:08:16 +0200
+    found: true
+  - sha: db2a278e852bc3d8aaffb44a18261f9cc56ef943
+    title: Modifications for running Gateway Conformance Test Suite
+    author: ctartici
+    date: 2025-07-09 17:10:16 +0200
+    found: true
+  - sha: edd5cac28ea7f5f0135f9865ae4690bb44ec5cc6
+    title: 'tests: revert patching TestGatewayConformance (#421)'
+    author: Jacek Ewertowski
+    date: 2025-07-01 13:22:41 +0200
+    found: true
+  - sha: 5f39751b12cc9b3797cdf29d91821ac39ad3c04d
+    title: Added mechanism to skip test suites
+    author: ctartici
+    date: 2025-08-04 11:04:31 +0200
+    found: true
+  - sha: 2250eca86e71386db3ce6be0d628b371013d28bf
+    title: Added mechanism to skip test suites
+    author: ctartici
+    date: 2025-08-01 12:27:18 +0200
+    found: true
+  - sha: 2d7b3dbbfdd88cc16ba69868aa06c6a7ab5a1986
+    title: Modify Prow Sail Operator script cleanup step (#457)
+    author: Maxim Babushkin
+    date: 2025-07-31 21:25:33 +0300
+    found: true
+  - sha: 3ca8a7d4c2ed13adead9bea07d502db038d086c7
+    title: security suite control plane parameters
+    author: ctartici
+    date: 2025-07-24 17:54:22 +0200
+    found: true
+  - sha: 2567a7e9464f295842f7f88bac54a64b3c2d4582
+    title: Add Ambient flow to Sail Operator Control Plane deploy integ tests (#436)
+    author: Maxim Babushkin
+    date: 2025-07-10 14:28:27 +0300
+    found: true
+  - sha: 74e8517b25d16e57bcde095e5c423e64b885b220
+    title: Add Ambient Gateway API test flow (#423)
+    author: Maxim Babushkin
+    date: 2025-07-03 14:23:27 +0300
+    found: true
+  - sha: 28709bc085aa900f7fdf0e71e7605f0c0077ef92
+    title: Add mechanism to execute integration tests againist downstream builds.
+    author: ctartici
+    date: 2025-06-12 20:41:41 +0200
+    found: true
+  - sha: e9ad230dd6ed4a0ac4f788205aa42078c2fd7528
+    title: Update bookinfo image version
+    author: Maxim Babushkin
+    date: 2025-04-20 09:48:40 +0300
+    found: true
+  - sha: 39af3e127554ac63e60db34caab96b693d0f8e0b
+    title: Add ambient test flow (#390)
+    author: Maxim Babushkin
+    date: 2025-05-26 18:22:47 +0300
+    found: true
+  - sha: e40ce5ad9e0172aa9572f9cff6c1e5d9f183a7d5
+    title: modify cleanup function with wait
+    author: ctartici
+    date: 2025-05-06 10:46:07 +0200
+    found: true
+  - sha: 6975e695dd9bd7ec78439fe1fa2c79f5192b12d8
+    title: change timeout value 2h if test is running on sail-operator
+    author: ctartici
+    date: 2025-05-05 20:18:37 +0200
+    found: true
+  - sha: eba138a0933ee85a64458b6f9c4756620fa6b787
+    title: fix for release directory structure to patch config
+    author: ctartici
+    date: 2025-05-05 13:54:29 +0200
+    found: true
+  - sha: a789e3da4bddcb8109d4f94b56e28565e6ffec61
+    title: small fix to get latest istio version
+    author: ctartici
+    date: 2025-04-30 13:32:41 +0200
+    found: true
+  - sha: a691ca78487f6a109b7c0c3df3748d23189dfbfd
+    title: Add copyright banner (#359)
+    author: Brian Mangoenpawiro
+    date: 2025-04-29 09:37:48 +0200
+    found: true
+  - sha: df5d8f179eedf295e40657f568ee7cabc6b51802
+    title: OSSM-8998 Disable istioctl commands with building ldflags (#312)
+    author: Brian Mangoenpawiro
+    date: 2025-04-18 10:04:01 +0200
+    found: true
+  - sha: e9d90bf687ddf362eca02fd278956c15b864b6d1
+    title: Fixing Failing Converter Tests
+    author: ctartici
+    date: 2025-04-14 18:11:31 +0200
+    found: true
+  - sha: d2a4f35bd1cd8be0895777441b5cb7624ee70857
+    title: Modifications to Run integration Tests With Sail Operator (#300)
+    author: Cansin Tartici
+    date: 2025-04-08 09:24:07 +0200
+    found: true
+  - sha: 9704b57cf96d5ec646722065d60dd990990a10e8
+    title: Fix go linter errors (#230)
+    author: Brian Mangoenpawiro
+    date: 2024-12-11 15:01:25 +0100
+    found: true
+  - sha: a1a3ebb1395c369b66ac361d6938e04eb48d72a6
+    title: Update sleep to use quay.io/sail-dev (#319)
+    author: Nick Fox
+    date: 2025-03-21 07:15:17 -0400
+    found: true
+  - sha: a8b399f84511ae8b2e4d29465a717ff79c125e07
+    title: Update some examples to use quay.io/sail-dev instead of docker
+    author: Nick Fox
+    date: 2025-03-10 15:32:01 -0400
+    found: true
+  - sha: df67269ba41caed28162add9879bd76014700d98
+    title: Adding SKIP_SETUP SKIP_TEST_RUN and DEPLOY_METALLB to ocp test run script (#279)
+    author: Francisco Herrera
+    date: 2025-02-11 11:15:15 +0100
+    found: true
+  - sha: 7932f6ccdfe34141f7d330c033ffca51e344c14c
+    title: Enable istioctl related ambient commands
+    author: bmangoen
+    date: 2025-01-24 10:10:12 +0100
+    found: true
+  - sha: 7339df017ea9bfd0600825303d159576616bea14
+    title: Set unsupported istioctl commands (#210)
+    author: Brian Mangoenpawiro
+    date: 2024-12-10 16:28:39 +0100
+    found: true
+  - sha: 6d10ace007079f1e742d93c1b80849b860214aca
+    title: Add in ocp setup the build of ztunnel image (#142)
+    author: Francisco Herrera
+    date: 2024-09-12 14:05:26 +0200
+    found: true
+  - sha: 9e0903cee41d2d2e8c484b7d8b2cae8bb427a7e7
+    title: 'Integration test run: delete profile openshift (#137)'
+    author: Francisco Herrera
+    date: 2024-09-09 13:34:19 +0200
+    found: true
+  - sha: 2b632a71ec629ad5857ccf096cfe1bacd7b69396
+    title: OSSM-6600 Avoid failures to be hidden on integration test (#30)
+    author: Francisco Herrera
+    date: 2024-07-18 12:58:40 +0200
+    found: true
+  - sha: dec0d869b589b758bd308d8979ad93c373d4015f
+    title: Push distroless images when helm integration test are executed (#27)
+    author: Francisco Herrera
+    date: 2024-05-22 18:29:01 +0200
+    found: true
+  - sha: 23952475a6edca236dcae86b735112d967f0aefa
+    title: Changes to report junit file and results from the running test suite (#15)
+    author: Francisco Herrera
+    date: 2024-05-14 13:54:50 +0200
+    found: true
+  - sha: abc1ec11c8ebefe089924440b19819fd376fb106
+    title: Fix ocp running test script affected by upstream test (#17)
+    author: Francisco Herrera
+    date: 2024-05-10 15:12:57 +0200
+    found: true
+  - sha: fdb9f957d851c4785e76ebe01112fae39966cd89
+    title: OSSM-6313 Update getAddressTimeout in our fork (#12)
+    author: Francisco Herrera
+    date: 2024-05-08 17:22:43 +0200
+    found: true
+  - sha: 06142d01f0d7bf737404f38414a217ca75bec09a
+    title: OSSM-4505 Add script to run integration test againt OCP cluster (#4)
+    author: Francisco Herrera
+    date: 2024-04-26 13:40:16 +0200
+    found: true
+  - sha: 25dcb2d5bf228cf7dce75cb28e966b3e7d77e0dc
+    title: Move "meshConfig" values out of gateway manifests (#479) (#500)
+    author: Maxim Babushkin
+    date: 2025-09-25 14:13:37 +0300
+    found: true
+  - sha: 8dad717f74fbffd463595039148f9ec2148fa5fc
+    title: Gateway API Inference Extension v1.0 (#489)
+    author: Aslak Knutsen
+    date: 2025-09-29 00:11:09 +0200
+    found: true
+  - sha: 3e9ef336c4e6f6a806ea14cc710c73042ee9b997
+    title: Add gotestsum option for integration test execution which is suitable for polarion xml parsing (#506)
+    author: Cansin Tartici
+    date: 2025-09-29 19:46:23 +0200
+    found: true
+  - sha: 87def1c307da41ccb5235e271b994a0297706e19
+    title: Do not use a default revision in gatewayinstance tests (#501)
+    author: Filip Brychta
+    date: 2025-09-29 16:10:58 +0200
+    found: true
+  - sha: dd1eed15fd5c36d722e68024475c1df730166851
+    title: 'feat: implements crl support for plugged-in CA for Gateway only ca (#493)'
+    author: Aslak Knutsen
+    date: 2025-09-29 13:22:48 +0200
+    found: true
+    isPermanent: true
+    comment: 'Follows 7fed0aa8b0db56e7d898652cfe6f4005f90a7f5d Enable CA Bundle injection in only Gateway Namespaces (#335)'
+  - sha: 293ae9032391865649a86f776e8711ccf4a4d002
+    title: Using the latest proxy from release-1.27 branch
+    author: Filip Brychta
+    date: 2025-10-01 07:59:58 +0200
+    found: true
+  - sha: 862dc92018be97e97fc6db27295de9c0291049c8
+    title: '[release-1.27] Fix the proxy image to work with new proxy binary (#453)'
+    author: Jonh Wendell
+    date: 2025-07-28 12:02:02 -0300
+    found: true
+  - sha: af51ceaf24f587570a37419dcd50e708318903aa
+    title: '[release-1.27] OSSM-8342: Use our proxy (#225)'
+    author: Jonh Wendell
+    date: 2025-01-15 12:56:16 -0500
+    found: true
+  - sha: a478318548b0968c4d01b0a8fa4c234eeef9f369
+    title: '[release-1.27] Automator: Update proxy (#509)'
+    author: openshift-service-mesh-bot
+    date: 2025-10-02 10:30:55 +0200
+    found: true
+  - sha: fc5f695dac9b123e269626b2fd16a91f770a16b2
+    title: '[release-1.27] Automator: Update proxy (#510)'
+    author: openshift-service-mesh-bot
+    date: 2025-10-14 03:48:12 -0400
+    found: true
+  - sha: 748dd8f2e40bbde2174b330b147ec50d69622670
+    title: Implement cluster operator stability check (#508)
+    author: OpenShift Cherrypick Robot
+    date: 2025-10-15 15:04:09 +0200
+    found: true
+  - sha: 7fe8e10dd59fcb42797aebb5078f5fb06e692a96
+    title: '[release-1.27] Automator: Update proxy (#512)'
+    author: openshift-service-mesh-bot
+    date: 2025-10-15 07:18:11 -0400
+    found: true
+  - sha: 41b4fc0092bcb5918cdec49c6a05328d397b2d10
+    title: '[release-1.27] Automator: Update proxy (#520)'
+    author: openshift-service-mesh-bot
+    date: 2025-10-16 16:21:44 -0400
+    found: true
+  - sha: e9b031ef6b6d4c0767d799a509c56f32ae2cb98b
+    title: '[release-1.27] Automator: Update proxy (#522)'
+    author: openshift-service-mesh-bot
+    date: 2025-10-21 16:29:03 -0400
+    found: true
+  - sha: 8b721a266c6bd41d84ec1ea71902c50b92da5e3c
+    title: '[release-1.27] Automator: Update proxy (#523)'
+    author: openshift-service-mesh-bot
+    date: 2025-10-22 01:42:27 -0400
+    found: true
+  - sha: 15d69d85e3c34215c34ad18a97a7ad51d1ba301d
+    title: '[release-1.27] Automator: Update proxy (#525)'
+    author: openshift-service-mesh-bot
+    date: 2025-10-27 03:51:30 -0400
+    found: true
+  - sha: e4c535c0f8a6f7b7dcfc780d7d9b9c86c17bfd8e
+    title: 'manifests: add optional network policy charts for ztunnel (#57680)'
+    author: Cameron Garrison
+    date: 2025-10-28 17:13:03 -0400
+    found: true
+  - sha: 97722eaa71f7f1f0407f33e7648905cd472b51eb
+    title: '[release-1.27] Automator: Update proxy (#535)'
+    author: openshift-service-mesh-bot
+    date: 2025-11-30 05:51:59 -0500
+    found: true
+  - sha: ee2a561a92ec2b7074fdb00a9f918427642ca097
+    title: Gateway Inference Extension 1.1 Multi-Port support (#538)
+    author: Aslak Knutsen
+    date: 2026-01-06 12:44:27 +0100
+    found: true
+  - sha: 2b0c137744a86676a7cc26657091da617efac4f4
+    title: Set Ambient config for DNS resolution (#548)
+    author: OpenShift Cherrypick Robot
+    date: 2026-01-09 09:18:15 +0100
+    found: true
+  - sha: ab794a9a5f9ba5c3f5f15c4a629b0d19e5c4d466
+    title: Prevent silent exit in OpenShift CI (#551)
+    author: OpenShift Cherrypick Robot
+    date: 2026-01-13 14:54:57 +0100
+    found: true
+  - sha: 940bd62cb22d463134cf680ebe6abd9ac7876c52
+    title: '[release-1.27] Automator: Update proxy (#540)'
+    author: openshift-service-mesh-bot
+    date: 2026-01-15 16:27:12 -0500
+    found: true
+  - sha: 7d86be07c1fbde694b42a104bde3930cb84d944b
+    title: Fix Telemetry tests Sail Operator config (#552) (#556)
+    author: Maxim Babushkin
+    date: 2026-01-20 12:41:25 +0200
+    found: true
+  - sha: 466ee144426dcd79dd74d4942951addc79703d1b
+    title: Run make gen
+    author: bmangoen
+    date: 2026-01-16 11:34:40 +0100
+    found: true
+  - sha: ceabf3d85a965d901920a4d79e9bb322d7c9d768
+    title: Fix TestEgressGatewayTls security test (#565)
+    author: OpenShift Cherrypick Robot
+    date: 2026-01-29 13:32:00 +0100
+    found: true
+  - sha: db8a981f3c577b016dc6cb2e002f487e359357ec
+    title: Fix security QUIC Sail Operator config (#568)
+    author: OpenShift Cherrypick Robot
+    date: 2026-02-02 11:47:41 +0100
+    found: true
+  - sha: a9a7c87d13eac1e4b6d00f1361a91c94af4354ad
+    title: 'test: Support specific tests to run in integ-suite-ocp.sh (#575)'
+    author: OpenShift Cherrypick Robot
+    date: 2026-02-11 10:18:19 +0100
+    found: true
+  - sha: d1d7c291d2475c70ca57be7cf6a13581de9334f7
+    title: Revert "Prevent route resource status conflict in multi-revision installs (#58292) (#58369)" (#590)
+    author: Aslak Knutsen
+    date: 2026-02-18 21:52:33 +0100
+    found: true
+  - sha: 9c2e01d7b522fe46da7dbf34beb65740c7190c40
+    title: Use our ztunnel (#571)
+    author: Zuzana Miklánková
+    date: 2026-02-23 12:04:35 +0100
+    found: true
+  - sha: 4c9aec6cf547cc0a00811f9717645a586556983c
+    title: '[release-1.27] Automator: Update proxy (#581)'
+    author: openshift-service-mesh-bot
+    date: 2026-02-25 22:39:40 -0500
+    found: true
+  - sha: c7ea2467ec0fcf745ec679f7289df93fb3ba7487
+    title: '[release-1.27] Automator: Update proxy (#615)'
+    author: openshift-service-mesh-bot
+    date: 2026-03-01 12:21:22 -0500
+    found: true
+  - sha: a2e60cfc6620cbd314d387ae36f8edd97a22b43b
+    title: Add "discoverySelectors" param to Sail test deploy config (#616)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-04 00:19:39 +0100
+    found: true
+  - sha: 2d3ced8de59ed2b327f26982753c912a3a6c7760
+    title: Update "PR label check" GH workflow (#629)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-03 16:01:47 +0100
+    found: true
+  - sha: 1e68927274385a176bea46546494dbdbf9f62c20
+    title: Add PR label check Github Action (#627)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-03 14:14:52 +0100
+    found: true
+  - sha: bc7f02c894df72b472cd59dae91ca11974c33e3d
+    title: Update integ-suite-ocp.sh to support IBM infra to run (#622)
+    author: OpenShift Cherrypick Robot
+    date: 2026-03-04 12:36:22 +0100
+    found: true
